@@ -1,0 +1,11 @@
+;
+; MDA Library .def file
+; (C) Chris Wood 1995.
+; cwood@gst-soft.demon.co.uk
+;
+LIBRARY        MDALIB
+EXETYPE        WINDOWS
+DESCRIPTION    'MDA Library'
+CODE           PRELOAD MOVEABLE
+DATA           PRELOAD MOVEABLE SINGLE
+HEAPSIZE       2048

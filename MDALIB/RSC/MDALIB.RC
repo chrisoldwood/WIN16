@@ -1,0 +1,42 @@
+/*****************************************************************************
+** (C) Chris Wood 1995.
+**
+** MDALIB.RC - MDA Library resource file.
+**
+******************************************************************************
+*/
+
+#include <windows.h>       
+#include <ver.h>
+
+/**** Application Version Info. *********************************************/
+VS_VERSION_INFO VERSIONINFO 
+ 	FILEVERSION        1,00,00,00
+	PRODUCTVERSION     1,00,00,00
+ 	FILEFLAGSMASK      VS_FFI_FILEFLAGSMASK
+ 	FILEFLAGS          0
+ 	FILEOS             VOS_DOS_WINDOWS16
+ 	FILETYPE           VFT_APP
+ 	FILESUBTYPE        VFT_UNKNOWN
+
+BEGIN
+	BLOCK "StringFileInfo"
+    	BEGIN
+     	BLOCK "040904E4"
+      	BEGIN
+       		VALUE "CompanyName",     "WoodySoft\0", "\0"
+	     	VALUE "FileDescription", "MDA Windows Library", "\0"
+	     	VALUE "FileVersion",     "1.0\0", "\0"
+     		VALUE "InternalName",    "MDALIB.DLL", "\0"
+	 		VALUE "LegalCopyright",  "Copyright \251 1995 WoodSoft", "\0"
+       		VALUE "OriginalFilename","MDALIB.DLL", "\0"
+       		VALUE "ProductName",     "MDA Windows Library", "\0"
+       		VALUE "ProductVersion",  "1.0\0"
+      	END
+   	END
+ 
+	BLOCK "VarFileInfo"
+	BEGIN 
+     	VALUE "Translation", 0x0809, 0x04E4
+	END 
+END
