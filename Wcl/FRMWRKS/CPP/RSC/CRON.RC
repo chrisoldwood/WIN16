@@ -1,0 +1,39 @@
+/*****************************************************************************
+** (C) Chris Wood 1995.
+**
+** CRON.RC - Application resources.
+**
+******************************************************************************
+*/
+
+#include <windows.h>
+#include "resource.h"
+
+/**** Icons. ****************************************************************/
+AppIcon   ICON      cron.ico
+
+/**** Bitmaps. **************************************************************/
+AboutBmp	BITMAP	about.bmp
+
+/**** Menu. *****************************************************************/
+AppMenu MENU
+BEGIN
+	POPUP	"&File"
+	BEGIN
+		MENUITEM	"&Exit",	IDM_EXIT
+	END
+	POPUP	"&Help"
+	BEGIN
+		MENUITEM	"&About",	IDM_ABOUT
+	END
+END
+        
+/**** Strings. **************************************************************/
+STRINGTABLE
+BEGIN
+	IDS_APPNAME,	"Naff Test Application"
+END
+
+/**** Dialogs. **************************************************************/
+#include "about.h"
+#include "about.dlg"

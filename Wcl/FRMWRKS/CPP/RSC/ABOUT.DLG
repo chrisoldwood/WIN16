@@ -1,0 +1,19 @@
+DLGINCLUDE RCDATA DISCARDABLE
+BEGIN
+    "ABOUT.H\0"
+END
+
+ABOUT_APP DIALOG 110, 35, 180, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "About The Application"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "", ABOUT_IMAGEAREA, "Static", SS_BLACKFRAME, 15, 10, 
+                    150, 100
+    PUSHBUTTON      "OK", IDOK, 70, 180, 40, 14
+    CTEXT           "The Application", ABOUT_APPNAME, 15, 120, 150, 8
+    CTEXT           "(C) Someone 1995", ABOUT_COPYRIGHT, 15, 150, 150, 8
+    CTEXT           "EMAIL: someone@gst-soft.demon.co.uk", ABOUT_EMAILADDR, 
+                    15, 160, 150, 8
+    CTEXT           "Version 1.0", ABOUT_VERSION, 15, 135, 150, 8
+END

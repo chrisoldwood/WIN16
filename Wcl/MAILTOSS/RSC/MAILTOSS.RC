@@ -1,0 +1,95 @@
+//Microsoft App Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+APPICON                 ICON    DISCARDABLE     "MAILTOSS.ICO"
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+FILE_IO_DIALOG DIALOG DISCARDABLE  0, 0, 199, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "%s"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            "AppIcon",IDC_STATIC,10,10,18,20
+    LTEXT           "Source:",IDC_STATIC,40,20,40,7
+    LTEXT           "%s",IDC_SOURCEDIR,85,20,105,8
+    LTEXT           "Delivering:",IDC_STATIC,40,50,45,8
+    LTEXT           "To:",IDC_STATIC,40,65,40,8
+    LTEXT           "%s",IDC_FILENAME,90,50,56,8
+    LTEXT           "%s",IDC_USERNAME,90,65,60,8
+    LTEXT           "Server:",IDC_STATIC,40,10,40,8
+    LTEXT           "%s",IDC_SERVERNAME,85,10,85,8
+    LTEXT           "Postmaster:",IDC_STATIC,40,30,40,8
+    LTEXT           "%s",IDC_POSTMASTER,85,30,85,8
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROGRAM             "MailToss"
+    IDS_VERSION             "1.2"
+    IDS_COPYRIGHT           "(C) Chris Wood 1995"
+END
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
