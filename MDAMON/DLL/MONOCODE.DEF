@@ -1,0 +1,43 @@
+;
+; Monocode DLL .def file
+; (C) Chris Wood 1994.
+; cwood@gst-soft.demon.co.uk
+;
+
+LIBRARY        monocode
+EXETYPE        WINDOWS
+DESCRIPTION    'Control code for Monochrome adapter'
+CODE           MOVEABLE DISCARDABLE LOADONCALL
+DATA           MOVEABLE SINGLE PRELOAD
+HEAPSIZE       1024
+
+SEGMENTS
+               _TEXT     PRELOAD MOVEABLE DISCARDABLE
+
+EXPORTS
+     WEP            @1   RESIDENTNAME
+     InitMono       @2   RESIDENTNAME  
+     ClearMono      @3   RESIDENTNAME
+     PlotChar       @4   RESIDENTNAME
+     HorizLine      @5   RESIDENTNAME
+     VertLine       @6   RESIDENTNAME
+     HorizString    @7   RESIDENTNAME
+     VertString     @8   RESIDENTNAME
+     ScrollUp       @9   RESIDENTNAME
+     ScrollDown     @10  RESIDENTNAME
+     ScrollLeft     @11  RESIDENTNAME
+     ScrollRight    @12  RESIDENTNAME
+     ByteAsHex      @13  RESIDENTNAME
+     WordAsHex      @14  RESIDENTNAME
+     DWordAsHex     @15  RESIDENTNAME
+     ByteAsDec      @16  RESIDENTNAME
+     WordAsDec      @17  RESIDENTNAME
+     DWordAsDec     @18  RESIDENTNAME
+     BoolAsString   @19  RESIDENTNAME
+     CentreString   @20  RESIDENTNAME
+     HorizMeter     @21  RESIDENTNAME
+     VertMeter      @22  RESIDENTNAME
+     FlagsAsDots    @23  RESIDENTNAME
+     PlotFrame      @24  RESIDENTNAME
+     DWordAsAddr    @25  RESIDENTNAME
+     

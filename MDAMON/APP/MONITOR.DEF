@@ -1,0 +1,15 @@
+;
+; Monocode test application .def file.
+; (C) Chris Wood 1994.
+; cwood@gst-soft.demon.co.uk
+;
+
+NAME           MONODBUG
+DESCRIPTION    'MONOCHROME DEBUG TEST APP'
+STUB           'WINSTUB.EXE'
+CODE           MOVEABLE
+EXETYPE        WINDOWS
+DATA           MOVEABLE MULTIPLE
+HEAPSIZE       4096
+STACKSIZE      4096
+EXPORTS      	MainWndProc

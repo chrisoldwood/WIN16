@@ -1,0 +1,12 @@
+/*****************************************************************************
+**
+** MONITOR.RC - Monocode test application resource file.
+** (C) Chris Wood 1994.
+** cwood@gst-soft.demon.co.uk
+**
+******************************************************************************
+*/
+
+#include "windows.h"
+
+MonitorIcon ICON monitor.ico
