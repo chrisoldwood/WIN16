@@ -1,0 +1,51 @@
+/******************************************************************************
+** (C) Chris Wood 1998
+**
+** MODULE:		APP15.RCV
+** COMPONENT:	The Application.
+** DESCRIPTION:	The application version information resource.
+**
+*******************************************************************************
+*/
+
+#include <ver.h>
+
+/******************************************************************************
+**
+** Version information.
+**
+*******************************************************************************
+*/
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION		1,0,0,0
+PRODUCTVERSION	1,0,0,0
+FILEFLAGSMASK	VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+FILEFLAGS		VS_FF_DEBUG | VS_FF_PRERELEASE
+#else
+FILEFLAGS		0
+#endif
+FILEOS			VOS_DOS_WINDOWS16
+FILETYPE		VFT_APP
+FILESUBTYPE		VFT_UNKNOWN
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904E4"
+		BEGIN
+			VALUE "CompanyName", "Comgraphix Ltd\0"
+			VALUE "FileDescription", "Task Tracker\0"
+			VALUE "FileVersion", "2.0\0"
+			VALUE "InternalName", "TASKTRAK.EXE\0"
+			VALUE "LegalCopyright", "(C) Chris Wood 1998\0"
+			VALUE "OriginalFilename", "TASKTRAK.EXE\0"
+			VALUE "ProductName", "Task Tracker\0"
+			VALUE "ProductVersion", "2.0\0"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x809, 1252
+	END
+END

@@ -1,0 +1,375 @@
+//Microsoft App Studio generated resource script.
+//
+#include "rsc16.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "wclrsc.h"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "rsc16.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""wclrsc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "#include ""app16.rcv""\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+ID_APP_ICON             ICON    DISCARDABLE     "APPICON.ICO"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+ID_APP_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save...\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Export...\tCtrl+E",          ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&Topic"
+    BEGIN
+        MENUITEM "&Add...\tCtrl+A",             ID_TOPIC_ADD
+        MENUITEM "&Edit...\tCtrl+P",            ID_TOPIC_EDIT
+        MENUITEM "&Delete",                     ID_TOPIC_DELETE
+    END
+    POPUP "&Project"
+    BEGIN
+        MENUITEM "&Settings...",                ID_PROJECT_SETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "&Build\tCtrl+B",              ID_PROJECT_BUILD
+        MENUITEM "&Test\tCtrl+T",               ID_PROJECT_TEST
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Compiler...",                ID_OPTIONS_COMPILER
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 123, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "About HelpFile Generator"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            ID_APP_ICON,IDC_STATIC,10,10,18,20
+    CTEXT           "HelpFile Generator",IDC_STATIC,40,10,70,10
+    CTEXT           "v1.0 (Alpha #1)",IDC_STATIC,40,20,70,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,10,40,100,1
+    CTEXT           "(C) Chris Wood 1998",IDC_STATIC,10,50,100,10
+    CTEXT           "gort@cix.co.uk",IDC_STATIC,10,59,100,10
+    DEFPUSHBUTTON   "OK",IDOK,40,85,40,15
+END
+
+IDD_ADD_TOPIC DIALOG DISCARDABLE  0, 0, 123, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Add A Topic"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Title:",IDC_STATIC,10,10,25,8
+    EDITTEXT        IDC_NAME,10,20,100,12,ES_AUTOHSCROLL
+    LTEXT           "Context Name:",IDC_STATIC,10,35,50,8
+    EDITTEXT        IDC_CONTEXT_NAME,10,46,100,12,ES_AUTOHSCROLL
+    LTEXT           "Keywords:",IDC_STATIC,10,60,40,8
+    EDITTEXT        IDC_KEYWORDS,10,71,100,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,15,120,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,65,120,40,15
+    LTEXT           "Context ID:",IDC_STATIC,10,85,40,8
+    EDITTEXT        IDC_CONTEXT_ID,10,95,100,12,ES_AUTOHSCROLL
+END
+
+IDD_PROJECT_SETTINGS DIALOG DISCARDABLE  0, 0, 174, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Project Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,45,145,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,89,145,40,15
+    CONTROL         "Settings",IDC_SETTINGS,"TabCtrlClassName",WS_TABSTOP,5,
+                    5,160,130
+END
+
+IDD_EDIT_TOPIC DIALOG DISCARDABLE  0, 0, 169, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Topic"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,40,70,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,85,70,45,15
+END
+
+IDD_COMPILER_SETTINGS DIALOG DISCARDABLE  0, 0, 174, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Compiler Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Help Compiler Path:",IDC_STATIC,10,15,70,8
+    EDITTEXT        IDC_FILENAME,10,25,150,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BROWSE,120,10,40,15
+    DEFPUSHBUTTON   "OK",IDOK,40,50,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,85,50,40,15
+END
+
+IDD_GENERAL_TAB DIALOG DISCARDABLE  0, 0, 157, 116
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "HelpFile &Title:",IDC_STATIC,10,10,55,8
+    EDITTEXT        IDC_TITLE,10,20,110,12,ES_AUTOHSCROLL
+    LTEXT           "Copyright &Message:",IDC_STATIC,10,40,70,8
+    EDITTEXT        IDC_COPYRIGHT,10,50,110,12,ES_AUTOHSCROLL
+    CONTROL         "&Compress HelpFile",IDC_COMPRESS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,70,75,8
+END
+
+IDD_HEADER_TAB DIALOG DISCARDABLE  0, 0, 157, 116
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Above:",IDC_STATIC,15,25,30,8
+    EDITTEXT        IDC_ABOVE,15,35,30,12,ES_AUTOHSCROLL
+    LTEXT           "&Left:",IDC_STATIC,15,75,30,8
+    EDITTEXT        IDC_LEFT,15,85,30,12,ES_AUTOHSCROLL
+    LTEXT           "&Right:",IDC_STATIC,50,75,30,8
+    EDITTEXT        IDC_RIGHT,50,85,30,12,ES_AUTOHSCROLL
+    GROUPBOX        "Paragraph Spacing",IDC_STATIC,10,10,75,45
+    GROUPBOX        "Margins",IDC_STATIC,10,60,75,45
+    LTEXT           "&Below:",IDC_STATIC,50,25,30,8
+    EDITTEXT        IDC_BELOW,50,35,30,12,ES_AUTOHSCROLL
+    GROUPBOX        "Background",IDC_STATIC,95,10,50,95
+    LTEXT           "R&ed:",IDC_STATIC,100,25,30,8
+    EDITTEXT        IDC_RED,100,35,30,12,ES_AUTOHSCROLL
+    LTEXT           "&Green:",IDC_STATIC,100,50,30,8
+    EDITTEXT        IDC_GREEN,100,60,30,12,ES_AUTOHSCROLL
+    LTEXT           "Bl&ue:",IDC_STATIC,100,75,30,8
+    EDITTEXT        IDC_BLUE,100,85,30,12,ES_AUTOHSCROLL
+END
+
+IDD_BODY_TAB DIALOG DISCARDABLE  0, 0, 157, 116
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Above:",IDC_STATIC,15,25,30,8
+    EDITTEXT        IDC_ABOVE,15,35,30,12,ES_AUTOHSCROLL
+    LTEXT           "&Left:",IDC_STATIC,15,75,30,8
+    EDITTEXT        IDC_LEFT,15,85,30,12,ES_AUTOHSCROLL
+    LTEXT           "&Right:",IDC_STATIC,50,75,30,8
+    EDITTEXT        IDC_RIGHT,50,85,30,12,ES_AUTOHSCROLL
+    GROUPBOX        "Paragraph Spacing",IDC_STATIC,10,10,75,45
+    GROUPBOX        "Margins",IDC_STATIC,10,60,75,45
+    LTEXT           "&Below:",IDC_STATIC,50,25,30,8
+    EDITTEXT        IDC_BELOW,50,35,30,12,ES_AUTOHSCROLL
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+ID_APP_TOOLBAR          BITMAP  DISCARDABLE     "TOOLBAR.BMP"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+ID_APP_ACCEL ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            ID_TOPIC_ADD,           VIRTKEY,CONTROL, NOINVERT
+    "B",            ID_PROJECT_BUILD,       VIRTKEY,CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY,CONTROL, NOINVERT
+    "E",            ID_FILE_EXPORT,         VIRTKEY,CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY,CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY,CONTROL, NOINVERT
+    "P",            ID_TOPIC_EDIT,          VIRTKEY,CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY,CONTROL, NOINVERT
+    "T",            ID_PROJECT_TEST,        VIRTKEY,CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY,CONTROL, NOINVERT
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_SPLITTER            CURSOR  DISCARDABLE     "SPLITTER.CUR"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "HelpFile Generator"
+    IDS_HELP_FILE           "hfgen.hlp"
+    IDS_CFG_FILE            "hfgen.ini"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FRAME_WND           "MainClassName"
+    IDS_TOOLBAR_WND         "ToolBarClassName"
+    IDS_STATUSBAR_WND       "InfoClassName"
+    IDS_HINTBAR_WND         "HintClassName"
+    IDS_PROGRESSBAR_WND     "MeterClassName"
+    IDS_VIEW_WND            "ViewClassName"
+    IDS_TABCTRL_WND         "TabCtrlClassName"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_RESTORE         "Restore the window size and position."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_MOVE            "Move the window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_SIZE            "Resize the window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_MINIMIZE        "Minimize the window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_MAXIMIZE        "Maximize the window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_CLOSE           "Close the window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_SWITCH          "Switch to another application"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_POPUP           "File options"
+    ID_FILE_NEW             "Create a new HelpFile"
+    ID_FILE_OPEN            "Open an existing HelpFile"
+    ID_FILE_SAVE            "Save the HelpFile"
+    ID_FILE_SAVE_AS         "Save the HelpFile under a new file name"
+    ID_FILE_EXPORT          "Export the HelpFile to an .RTF file"
+    ID_FILE_EXIT            "Exit the application"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_HELP_POPUP           "Help options"
+    ID_HELP_ABOUT           "About HelpFile Generator"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_POPUP           "Edit options"
+    ID_EDIT_CUT             "Cut the text to the clipboard"
+    ID_EDIT_COPY            "Copy the text to the clipboard"
+    ID_EDIT_PASTE           "Paste text from the clipboard"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOPIC_POPUP          "Topic options"
+    ID_TOPIC_ADD            "Add a new topic"
+    ID_TOPIC_EDIT           "Edit the topic properties"
+    ID_TOPIC_DELETE         "Delete the topic"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OPTIONS_POPUP        "Application options"
+    ID_OPTIONS_COMPILER     "Edit the compiler settings"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PROJECT_POPUP        "Project options"
+    ID_PROJECT_SETTINGS     "Edit the HelpFile settings"
+    ID_PROJECT_BUILD        "Build the HelpFile"
+    ID_PROJECT_TEST         "Test the HelpFile"
+END
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#include "app16.rcv"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

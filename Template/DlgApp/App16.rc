@@ -1,0 +1,196 @@
+//Microsoft App Studio generated resource script.
+//
+#include "rsc16.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "wclrsc.h"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "rsc16.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""wclrsc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "#include ""app16.rcv""\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+ID_APP_ICON             ICON    DISCARDABLE     "APPICON.ICO"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+ID_APP_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit\tCtrl+X",               ID_FILE_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...\tCtrl+A",           ID_HELP_ABOUT
+    END
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN_DIALOG DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD | WS_VISIBLE | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Main Dialog",IDC_STATIC,10,10,45,10
+END
+
+IDD_ABOUT_DIALOG DIALOG DISCARDABLE  0, 0, 109, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "About TestApp"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,30,70,50,14
+    CTEXT           "(C) Chris Wood 1998",IDC_STATIC,10,10,85,10
+    CTEXT           "gort@cix.co.uk",IDC_STATIC,10,25,85,10
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+ID_APP_TOOLBAR          BITMAP  DISCARDABLE     "TOOLBAR.BMP"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+ID_APP_ACCEL ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            ID_HELP_ABOUT,          VIRTKEY,CONTROL, NOINVERT
+    "X",            ID_FILE_EXIT,           VIRTKEY,CONTROL, NOINVERT
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "App Name"
+    IDS_HELP_FILE           "app.hlp"
+    IDS_CFG_FILE            "app.ini"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FRAME_WND           "MainClassName"
+    IDS_TOOLBAR_WND         "ToolBarClassName"
+    IDS_STATUSBAR_WND       "InfoClassName"
+    IDS_HINTBAR_WND         "HintClassName"
+    IDS_PROGRESSBAR_WND     "MeterClassName"
+    IDS_VIEW_WND         	"ViewClassName"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_RESTORE         "Restore the window size and position."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_MOVE            "Move the window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_SIZE            "Resize the window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_MINIMIZE        "Minimize the window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_MAXIMIZE        "Maximize the window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_CLOSE           "Close the window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_SWITCH          "Switch to another application"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_POPUP           "File Menu"
+    ID_FILE_EXIT            "Exit Application"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_HELP_POPUP           "Help Menu"
+    ID_HELP_ABOUT           "About The Application"
+END
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#include "app16.rcv"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
