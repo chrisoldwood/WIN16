@@ -1,0 +1,168 @@
+//Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "ver.h"
+#include "menursc.h"
+#include "strngrsc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+APPICON                 ICON    DISCARDABLE     "app.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+APPMENU MENU DISCARDABLE 
+BEGIN
+    MENUITEM "E&xit",                       IDM_EXIT
+    MENUITEM "&About",                      IDM_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+APPKEYS ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "^X",           IDM_EXIT,               ASCII,  NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ABOUT_DIALOG DIALOG DISCARDABLE  110, 35, 172, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "About MDARsc"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,65,65,40,14
+    CTEXT           "MDARsc",ABOUT_APPNAME,10,5,150,8
+    CTEXT           "Version 1.0",ABOUT_VERSION,10,18,150,8
+    CTEXT           "(C) Chris Wood 1995",ABOUT_COPYRIGHT,10,31,150,8
+    CTEXT           "EMAIL: cwood@gst-soft.demon.co.uk",ABOUT_EMAILADDR,10,
+                    44,150,8
+    ICON            "APPICON",-1,10,5,18,20
+    ICON            "APPICON",-1,140,5,18,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x10004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080904e4"
+        BEGIN
+            VALUE "Comments", "Swanky App!\0"
+            VALUE "CompanyName", "BodgeJob Software\0"
+            VALUE "FileDescription", "Resource Monitor\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "MDARSC.EXE\0"
+            VALUE "LegalCopyright", "Copyright \251 1995 Chris Wood\0"
+            VALUE "OriginalFilename", "MDARSC.EXE\0"
+            VALUE "ProductName", "Resource Monitor\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x809, 1252
+    END
+END
+
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""ver.h""\r\n"
+    "#include ""menursc.h""\r\n"
+    "#include ""strngrsc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APPNAME             " MDARsc V1.0 "
+    IDS_VERSION             "1.0"
+    IDS_COPYRIGHT           "(C) Chris Wood 1995"
+    IDS_PRGWNDCLASS         "MDARscMain"
+END
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
