@@ -1,0 +1,11 @@
+;
+; MDA Library Test Application .def file
+; (C) Chris Wood 1995.
+; cwood@gst-soft.demon.co.uk
+;
+NAME      	RSCMON
+EXETYPE   	WINDOWS
+DESCRIPTION    'MDA Library Test Application'
+CODE      	PRELOAD MOVEABLE DISCARDABLE
+DATA      	PRELOAD MOVEABLE MULTIPLE
+HEAPSIZE  	1024
